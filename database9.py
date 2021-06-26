@@ -21,7 +21,7 @@ def retrieve_rows(eno):
     
     # Connect To MYSQL DataBase
     
-    conn = MySQLdb.connect(host='localhost', database="pythondb", user='prasadD', password='prasadD@93')
+    conn = MySQLdb.connect(host='localhost', database="Enter The Database Name (Schemas)", user='Enter User Name Of Mysql Workbench', password='Enter The Password')
 
     # Prepare A Cursor Object Using Cursor() Method
 
