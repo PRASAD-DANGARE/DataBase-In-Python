@@ -1,7 +1,7 @@
-# Python Program To Increase The Salary Of student By Accepting The Student Number From KeyBoard
+# Python Program To Increase The Salary Of An Employee By Accepting The Employee Number From KeyBoard
 
 '''
-Function Name    :  Increase The Salary Of An student From KeyBoard
+Function Name    :  Increase The Salary Of An Employee From KeyBoard
 Function Date    :  10 Oct 2020
 Function Author  :  Prasad Dangare
 Input            :  String
@@ -10,13 +10,13 @@ Output           :  String
 
 import MySQLdb
 
-# Function To Store Row Into The Student Table
+# Function To Store Row Into The Employee Table
 
 def update_rows(eno):
     
     # Connect To MySQL DataBase
     
-    conn = MySQLdb.connect(host='localhost', database="pythondb", user='prasadD', password='prasadD@93')
+    conn = MySQLdb.connect(host='localhost', database="Enter The Database Name (Schemas)", user='Enter User Name Of Mysql Workbench', password='Enter The Password')
 
     # Prepare A Cursor Object Using Cursor() Method
 
@@ -53,7 +53,7 @@ def update_rows(eno):
         cursor.close()
         conn.close()
         
-# Enter Student Number Whose Row Is To Be Updated
+# Enter Employee Number Whose Row Is To Be Updated
 
 x = int(input('Enter ENO : '))
 
