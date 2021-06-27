@@ -7,13 +7,11 @@ Output           :  Record Get Deleted From The Row
 
 '''
 
-# Delete a row from table
-
 import MySQLdb
 
 def Delete_Rows(eno):
 
-    Connction = MySQLdb.connect(host = "localhost", database = "pythondb", user = "root", password = "prasadD@93")
+    Connction = MySQLdb.connect(host = "localhost", database = "pythondb", user = "root", password = "-----")
 
     cobj = Connction.cursor()
 
